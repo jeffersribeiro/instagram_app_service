@@ -1,9 +1,16 @@
 import React, {Component} from 'react';
-import {View, Text, Image, TouchableOpacity} from 'react-native';
+import {
+  View,
+  Text,
+  Image,
+  TouchableOpacity
+} from 'react-native';
 import Icon from 'react-native-ionicons';
 import styles from '../assets/styles/profile';
 import {createDrawerNavigator} from 'react-navigation-drawer';
 import {createAppContainer} from 'react-navigation';
+import NewFeatured from '../components/ new_featured/index';
+import ImagesPosts from '../components/images_posts/index';
 
 class Profile extends Component {
   render() {
@@ -36,16 +43,32 @@ class Profile extends Component {
           </TouchableOpacity>
         </View>
         <View style={styles.ProfileDescriptions}>
-          <Text style={styles.ProfileDescriptionsText,{fontWeight:'bold'}}>Bume</Text>
-          <Text style={styles.ProfileDescriptionsText, {color:'darkgray'}}>Serviço de automação</Text>
-          <Text style={styles.ProfileDescriptionsText,{color:'skyblue'}}>#Bume #MidiasSociais</Text>
-          <Text style={styles.ProfileDescriptionsText,{color:'skyblue'}}>Belo Horizonte, Brazil</Text>
+          <Text style={(styles.ProfileDescriptionsText, {fontWeight: 'bold'})}>
+            Bume
+          </Text>
+          <Text style={(styles.ProfileDescriptionsText, {color: 'darkgray'})}>
+            Serviço de automação
+          </Text>
+          <Text style={(styles.ProfileDescriptionsText, {color: 'skyblue'})}>
+            #Bume #MidiasSociais
+          </Text>
+          <Text style={(styles.ProfileDescriptionsText, {color: 'skyblue'})}>
+            Belo Horizonte, Brazil
+          </Text>
         </View>
         <View style={styles.ProfileFeatured}>
-        <Image style={styles.profileFeaturedImage} /> 
-        <Image style={styles.profileFeaturedImage} />
-        <Image style={styles.profileFeaturedImage} />
-        <Image style={styles.profileFeaturedImage} />
+          <View style={styles.profileFeaturedImage}>
+            <NewFeatured />
+          </View>
+          <View style={styles.profileFeaturedImage}>
+            <NewFeatured />
+          </View>
+          <View style={styles.profileFeaturedImage}>
+            <NewFeatured />
+          </View>
+          <View style={styles.profileFeaturedImage}>
+            <NewFeatured />
+          </View>
         </View>
         <View style={styles.ProfileContacts}>
           <TouchableOpacity>
@@ -55,7 +78,9 @@ class Profile extends Component {
             <Text style={styles.ProfileContactsText}>Como Chegar</Text>
           </TouchableOpacity>
         </View>
-        <View style={styles.profilePosts}></View>
+        <View style={styles.profilePosts}>
+          <ImagesPosts />
+        </View>
       </View>
     );
   }

@@ -80,6 +80,7 @@ const styles = StyleSheet.create({
     height: '90%',
     width: '21%',
     borderRadius: 50,
+    margin:10
   },
   ProfileContacts: {
     flex: 1,
@@ -90,6 +91,7 @@ const styles = StyleSheet.create({
     borderTopWidth: 1,
     borderBottomWidth: 1,
     borderColor: 'lightgray',
+    marginVertical:10
   },
   ProfileContactsText: {
     color: 'skyblue',
@@ -98,6 +100,8 @@ const styles = StyleSheet.create({
   },
   profilePosts: {
     flex: 4,
+    display:'flex',
+    flexDirection:'column',
   },
 });
 
