@@ -1,14 +1,12 @@
 import React, {Component} from 'react';
 import {View, Text, ScrollView, SafeAreaView, StyleSheet} from 'react-native';
-import Stories from '../components/stories/index'
 import styles from '../assets/styles/home'
 
 export default class Home extends Component {
   render() {
     return (
       <SafeAreaView style={styles.container}>
-        <ScrollView style={styles.scrollView}>
-          <Stories />
+        <ScrollView>
           <Text style={styles.text}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
