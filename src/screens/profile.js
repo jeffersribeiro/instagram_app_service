@@ -9,12 +9,18 @@ import Icon from 'react-native-ionicons';
 import styles from '../assets/styles/profile';
 import {createDrawerNavigator} from 'react-navigation-drawer';
 import {createAppContainer} from 'react-navigation';
-import NewFeatured from '../components/ new_featured/index';
-import ImagesPosts from '../components/images_posts/index';
+import Highlights from '../components/highlights/highlights';
+import Posts from '../components/posts/posts';
+import SafeAreaView from 'react-native-safe-area-view';
+import { ScrollView } from 'react-native-gesture-handler';
 
 class Profile extends Component {
   render() {
     return (
+      <SafeAreaView>
+        <ScrollView>
+
+
       <View style={styles.pageProfile}>
         <View style={styles.inforProfile}>
           <Image style={styles.inforProfileImage} />
@@ -58,16 +64,16 @@ class Profile extends Component {
         </View>
         <View style={styles.ProfileFeatured}>
           <View style={styles.profileFeaturedImage}>
-            <NewFeatured />
+            <Highlights />
           </View>
           <View style={styles.profileFeaturedImage}>
-            <NewFeatured />
+            <Highlights />
           </View>
           <View style={styles.profileFeaturedImage}>
-            <NewFeatured />
+            <Highlights />
           </View>
           <View style={styles.profileFeaturedImage}>
-            <NewFeatured />
+            <Highlights />
           </View>
         </View>
         <View style={styles.ProfileContacts}>
@@ -78,10 +84,39 @@ class Profile extends Component {
             <Text style={styles.ProfileContactsText}>Como Chegar</Text>
           </TouchableOpacity>
         </View>
-        <View style={styles.profilePosts}>
-          <ImagesPosts />
-        </View>
+        <SafeAreaView style={styles.profilePosts}>
+          <Posts />
+          <Posts />
+          <Posts />
+          <Posts />
+          <Posts />
+          <Posts />
+          <Posts />
+          <Posts />
+          <Posts />
+          <Posts />
+          <Posts />
+          <Posts />
+          <Posts />
+          <Posts />
+          <Posts />
+          <Posts />
+          <Posts />
+          <Posts />
+          <Posts />
+          <Posts />
+          <Posts />
+          <Posts />
+          <Posts />
+          <Posts />
+          <Posts />
+          <Posts />
+        </SafeAreaView>
       </View>
+
+
+      </ScrollView>
+      </SafeAreaView>
     );
   }
 }

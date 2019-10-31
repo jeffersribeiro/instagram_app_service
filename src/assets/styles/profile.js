@@ -7,7 +7,7 @@ const styles = StyleSheet.create({
   },
   inforProfile: {
     flexDirection: 'row',
-    height: '15%',
+    height: 100,
   },
   inforProfileTtext: {
     flex: 1,
@@ -42,15 +42,15 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
   },
   inforProfileButtonslayout: {
-    width: '95%',
+    width: 400,
     justifyContent: 'flex-end',
     flexDirection: 'row',
     marginHorizontal: 5,
   },
   iconStyle: {
     position: 'relative',
-    right: '150%',
-    top: '95%',
+    right: 40,
+    top: 90,
     backgroundColor: 'skyblue',
     color: 'white',
     alignSelf: 'flex-end',
@@ -77,9 +77,9 @@ const styles = StyleSheet.create({
   },
   profileFeaturedImage: {
     backgroundColor: 'darkgray',
-    height: '90%',
-    width: '21%',
-    borderRadius: 50,
+    height: 85,
+    width: 85,
+    borderRadius: 85,
     margin:10
   },
   ProfileContacts: {
@@ -101,7 +101,8 @@ const styles = StyleSheet.create({
   profilePosts: {
     flex: 4,
     display:'flex',
-    flexDirection:'column',
+    flexDirection:'row',
+    flexWrap:'wrap'
   },
 });
 

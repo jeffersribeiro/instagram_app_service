@@ -2,8 +2,8 @@ import {StyleSheet} from 'react-native';
 
 const styles = StyleSheet.create({
   featured: {
-    height: '59%',
-    width: '32%',
+    height: 129,
+    width: 130,
     margin: 2,
     borderColor: 'darkgray',
     borderStyle: 'solid',
