@@ -9,7 +9,7 @@ const styles = StyleSheet.create({
   },
   text: {
     fontSize: 42,
-  },
+  }
 });
 
 export default styles;

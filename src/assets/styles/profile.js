@@ -75,13 +75,7 @@ const styles = StyleSheet.create({
     justifyContent: 'space-evenly',
     alignItems: 'center',
   },
-  profileFeaturedImage: {
-    backgroundColor: 'darkgray',
-    height: 85,
-    width: 85,
-    borderRadius: 85,
-    margin:10
-  },
+
   ProfileContacts: {
     flex: 1,
     display: 'flex',

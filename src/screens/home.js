@@ -1,24 +1,44 @@
 import React, {Component} from 'react';
 import {View, Text, ScrollView, SafeAreaView, StyleSheet} from 'react-native';
-import styles from '../assets/styles/home'
+import styles from '../assets/styles/home';
+import Highlights from '../components/highlights/highlights';
+import Posts from '../components/posts/posts';
+import ImagesPosts from '../components/ImagePosts/imagePosts';
+import Stories from '../components/stories/index';
 
 export default class Home extends Component {
   render() {
     return (
-      <SafeAreaView style={styles.container}>
-        <ScrollView>
-          <Text style={styles.text}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
-          </Text>
+      <SafeAreaView 
+      style={styles.container}>
+        <ScrollView
+      showsVerticalScrollIndicator={false}
+        >
+          <ScrollView
+          style={{paddingLeft:'2%'}}
+          horizontal={true}
+          showsHorizontalScrollIndicator={false}
+          >
+          <View style={{display:"flex",flexDirection:'row'}}> 
+            <Highlights />
+            <Highlights />
+            <Highlights />
+            <Highlights />
+            <Highlights />
+            <Highlights />
+            <Highlights />
+            <Highlights />
+            <Highlights />
+          </View>
+          </ScrollView>
+          <ImagesPosts />
+          <ImagesPosts />
+          <ImagesPosts />
+          <ImagesPosts />
+          <ImagesPosts />
+          <ImagesPosts />
         </ScrollView>
       </SafeAreaView>
     );
   }
 }
-
